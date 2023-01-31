@@ -27,8 +27,10 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t orlinalvarado/docker-graphql:0.0.2 .
+        docker build -t orlinalvarado/docker-graphql:latest .
       
     - name: Push Docker Image
       run: |
         docker push orlinalvarado/docker-graphql:0.0.2
+        docker push orlinalvarado/docker-graphql:latest
         
